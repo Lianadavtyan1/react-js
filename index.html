@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+    <style>
+        div {
+            margin: auto;
+            width: 930px;
+            height: 630px;
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            justify-content: center;
+        }
+        .class1 {
+            width: 33%;
+            height: 29%;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>   
+        <div style="height: 10%;"><h1>Квадрат <i> Bagua</i>: Направление, Элемент, Цвет, Значение</h1></div>     
+        <div id="div1" class="class1" style="background-color: #989898; color: black;">
+        <p><b>Северо-Запад</b> <br> Металл <br>Серебро <br> Старейшины</p>
+        </div>
+        <div id="div2" class="class1" style="background-color: #0134FF;">
+            <p><b>Север</b><br> Вода<br> Синий<br> Перемены</p>
+        </div>
+        <div id="div3" class="class1" style="background-color: #FFFF6A; color: black;">
+            <p><b>Северо-Восток</b><br> Земля<br> Желтый <br>Направление</p>
+        </div>
+        <div id="div4" class="class1" style="background-color: #FFFF00; color: black;">
+            <p><b>Запад</b><br>  Металл <br>Золото<br> Молодость</p>
+        </div>
+        <div id="div5" class="class1" style="background-color: #6300CD;">
+            <p><b>Центр</b><br> Всё<br> Пурпурный<br> Гармония</p>
+        </div>
+        <div id="div6" class="class1" style="background-color: #009AFB;">
+            <p><b>Восток</b><br> Дерево<br> Синий<br> Будущее</p>
+        </div>
+        <div id="div7" class="class1" style="background-color: #9A6636;">
+            <p><b>Юго-Запад</b><br> Земля <br>Коричневый <br>Спокойствие</p>
+        </div>
+        <div id="div8" class="class1" style="background-color: #FF6403;">
+            <p><b>Юг</b><br> Огонь<br> Оранжевый<br> Слава</p>
+        </div>
+        <div id="div9" class="class1" style="background-color: #01CC34;">
+            <p><b>Юго-Воцток</b> <br>Дерево <br>Зеленый <br>Роман</p>
+        </div>
+    </div>
+    <script>
+        div1.addEventListener("click", myfunction);
+        function myfunction(){            
+            document.getElementById('div1').style.backgroundColor = 'red';         
+        }
+    </script>
+</body>
+</html>
